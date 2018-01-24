@@ -3,7 +3,7 @@ General Notes and Coming Improvements:
 Why do I use rgb and also #000000 at the same time?
 -Dont forget to remove this when the website is complete!-
 */
-@import url(https://fonts.googleapis.com/css?family=Raleway|Varela+Round|Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand);
 html {
     height: 100%;
 }
@@ -103,12 +103,12 @@ body {
     /* Can this be shortened? */
     padding-right: 20%;
     padding-left: 20%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 h1 {
-    font-family: Varela Round;
+    font-family: Quicksand;
     font-size: 3vw;
-    padding-top: 10%;
+    padding-top: 12%;
 }
 p {
     font-size: 1.5vw;
@@ -127,6 +127,24 @@ td, th {
 }
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#faq {
+    /* Awkward logic */
+    width: 100%;
+}
+.question {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 29%;
+}
+.question>p {
+    font-family: Quicksand;
+    font-size: 1.25vw;
 }
 footer {
     background: #002266;
