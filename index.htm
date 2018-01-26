@@ -11,8 +11,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-    <body class="background">
-        <nav>
+    <body>
+        <video autoplay muted loop id="background">
+            <source src="media/background.mp4" type="video/mp4">
+        </video>
+        <nav class="navTransparent">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
@@ -23,7 +26,7 @@
         </nav>
         <header>
             <div id="centennialHacks"><b>Centennial Hacks</b></div>
-            <div id="centennialEagle"><img src=logo.png alt="You may have a bad internet connection :/" width= 100% height= 100%px></div>
+            <div id="centennialEagle"><img src=media/logo.png width= 100% height= 100%></div>
             <div></div>
             <div id="centennialDate">Centennial High School | April 14<sup>th</sup> 2018</div>
         </header>
@@ -75,24 +78,46 @@
             </div>
             <div class="faq">
                 <h1 id="faq">Frequently Asked Questions</h1>
-                <div class="question"><b>What is a Hackathon?</b><p>A Hackathon is an event that brings novice and experienced coders together in order to create innovative projects involving code.</p></div>
-                <div class="question"><b>Do I need to know how to code?</b><p>No, you don't! Even if you aren't able to code beforehand, you can attend workshops, learn some code, and still submit a project.</p></div>
-                <div class="question"><b>Who can attend?</b><p>C10 HAX is open to all high-school students. However, anyone is welcome to drop by and see what participants are working on.</p></div>
-                <div class="question"><b>What if I don't have a team?</b><p>No problem! Many participants arrive without a team, and you can meet and work with new people. You can also choose to work alone. The limit is 4 people per team.</p></div>
-                <div class="question"><b>What can I make?</b><p>For C10 HAX Spring 2018, you can code anything you want! Possibilities are websites, mobile or desktop apps, or even hardware projects.</p></div>
-                <div class="question"><b>How much does it cost?</b><p>All Hackathons, including C10 HAX, are free! We provide food, beverages, workspaces, and "swag" (free stuff).</p></div>
-                <div class="question"><b>What should I bring?</b><p>We recommend that you bring an ID (if you have one) and a laptop. Laptops aren't required, but it won't be easy to code on lined paper.</p></div>
-                <div class="question"><b>Can I use past projects?</b><p>Anyone caught working on past projects will be forced to sit in the corner and wear the dunce hat. Just kidding. But seriously, we discourage using old work.</p></div>
-                <div class="question"><b>Will hardware be provided?</b><p>Well, we don't know yet. Updates will be provided as the hackathon draws nearer.</p></div>
-                <div class="question"><b>How do I win?</b><p>The judges are looking for original, innovative, and well-functioning projects. Bonus points for a project with real-world applicability!</p></div>
-                <div class="question"><b>Is there a code of conduct?</b><p>C10 HAX follows the<br> <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p></div>
-                <div class="question"><b>More Questions?</b><p>Contact us at chshackathon@gmail.com!</p></div>
+                <div><b>What is a Hackathon?</b><p>A Hackathon is an event that brings novice and experienced coders together in order to create innovative projects involving code.</p></div>
+                <div><b>Do I need to know how to code?</b><p>No, you don't! Even if you aren't able to code beforehand, you can attend workshops, learn some code, and still submit a project.</p></div>
+                <div><b>Who can attend?</b><p>C10 HAX is open to all high-school students. However, anyone is welcome to drop by and see what participants are working on.</p></div>
+                <div><b>What if I don't have a team?</b><p>No problem! Many participants arrive without a team, and you can meet and work with new people. You can also choose to work alone. The limit is 4 people per team.</p></div>
+                <div><b>What can I make?</b><p>For C10 HAX Spring 2018, you can code anything you want! Possibilities are websites, mobile or desktop apps, or even hardware projects.</p></div>
+                <div><b>How much does it cost?</b><p>All Hackathons, including C10 HAX, are free! We provide food, beverages, workspaces, and "swag" (free stuff).</p></div>
+                <div><b>What should I bring?</b><p>We recommend that you bring an ID (if you have one) and a laptop. Laptops aren't required, but it won't be easy to code on lined paper.</p></div>
+                <div><b>Can I use past projects?</b><p>Anyone caught working on past projects will be forced to sit in the corner and wear the dunce hat. Seriously though, we discourage using old work.</p></div>
+                <div><b>Will hardware be provided?</b><p>Well, we don't know yet. Updates will be provided as the hackathon draws nearer.</p></div>
+                <div><b>How do I win?</b><p>The judges are looking for original, innovative, and well-functioning projects. Bonus points for a project with real-world applicability!</p></div>
+                <div><b>Is there a code of conduct?</b><p>C10 HAX follows the<br> <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p></div>
+                <div><b>More Questions?</b><p>Contact us at chshackathon@gmail.com!</p></div>
             </div>
-            <div style="padding-bottom: 15%">
-                <h1 id="sponsors">Sponsors</h1>
+            <div>
+                <h1 id="sponsors" >Sponsors</h1>
                 <p>Interested in sponsoring our hackathon? Contact us at chshackathon@gmail.com!</p>
             </div>
+            <!-- Is there any way not to use style? -->
+            <!--
+            <div class="team" style="padding-bottom: 15%">
+                <h1>Meet the Team</h1>
+                <div>Organizer<img src="media/Sathwik.png" width=200vw height=200vw><b>Sathwik Yanamaddi</b><p>Sathwik came up with the idea of hosting a hackathon, thereby becoming the founder of C10 HAX.</p></div>
+                <div>Technology<img src="media/Richard.jpg" width=200vw height=200vw><b>Richard Huang</b><p>Richard spent a weekend learning html, CSS, and JavaScript in order to build the current C10 HAX website.</p></div>
+                <div>Fundraising<img src="media/Amilee.jpg" width=200vw height=200vw><b>Amilee Huang</b><p>Amilee heads fundraising efforts and provides excellent moral support (along with monetary support). She isn't related to Richard. </p></div>
+                <div>Graphic Design<img src="media/Andrew.jpg" width=200vw height=200vw><b>Andrew Zhao</b><p>Andrew never officially became part of C10 HAX, however, he is the creator of the remarkable eagle logo.</p></div>
+            </div>
+            -->
+            <!-- This div should be removed once the "Meet the Team" section is activated -->
+            <div style="padding-bottom: 15%"></div>
         </div>
     </body>
-    <footer>© 2018 C10 HAX</footer>
+    <footer>
+        <div>Check us out on social media!</div>
+        <div>
+            <a href="LINK NOT WORKING YET"><img alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width=3% height=3%/></a>
+            <!--
+            <a href="insert link here"><img alt="Instagram" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width=3% height=3%/></a>
+            -->
+        </div>
+        <div>Questions? Contact us at chshackathon@gmail.com.</div>
+        © 2018 C10 HAX
+    </footer>
 </html>

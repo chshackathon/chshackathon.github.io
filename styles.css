@@ -1,5 +1,6 @@
 /*
 General Notes and Coming Improvements:
+Change vw to em
 Why do I use rgb and also #000000 at the same time?
 -Dont forget to remove this when the website is complete!-
 */
@@ -7,29 +8,19 @@ Why do I use rgb and also #000000 at the same time?
 html {
     height: 100%;
 }
-.background {
-    background-color: #008866;
-    animation-name: backgroundFade;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-@keyframes backgroundFade {
-    0% {background-color: #008866;}
-    40% {background-color: #671a92}
-    60% {background-color: #890000;}
-    100% {background-color: #008866;}
-}
 nav {
     padding: 1vw 3vw;
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
+}
+.navTransparent {
     background: transparent;
+    transition-duration: .5s;
 }
 .navColor {
-    background: #002266;
-    transition-duration: .25s;
+    background: #001144;
+    transition-duration: .5s;
 }
 ul {
     width: 100%;
@@ -94,16 +85,21 @@ body {
     text-align: center;
     padding-bottom: 30%;
 }
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
 .body-container {
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 .body-container>div {
-    /* Can this be shortened? */
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-bottom: 5%;
+    padding: 0% 15% 5%;
 }
 h1 {
     font-family: Quicksand;
@@ -133,22 +129,43 @@ tr:nth-child(even) {
     flex-wrap: wrap;
     justify-content: center;
 }
-#faq {
-    /* Awkward logic */
+.faq>h1 {
     width: 100%;
 }
-.question {
+.faq>div {
     font-size: 1.5vw;
     padding: 1vw;
     width: 29%;
 }
-.question>p {
-    font-family: Quicksand;
+.faq>div>p {
+    font-size: 1.25vw;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team>h1 {
+    width: 100%;
+}
+.team>div {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 21%;
+}
+.team>div>img {
+    border-radius: 50%;
+    padding: 1vw;
+}
+.team>div>p {
     font-size: 1.25vw;
 }
 footer {
-    background: #002266;
+    background: #001144;
     color: white;
     font-size: 1vw;
-    padding: 10vw;
+    padding: 5vw;
+}
+footer>div {
+    padding: 1vw;
 }

@@ -6,11 +6,13 @@ Why are there errors? Even though the code functions perfectly?
 $(document).ready(function (){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if(scroll > 150){
+        if(scroll > 100){
+            $("nav").removeClass("navTransparent");
             $("nav").addClass("navColor");   
         }
         else{
             $("nav").removeClass("navColor");
+            $("nav").addClass("navTransparent");
         }
     })
     $(document).on('click', 'a[href^="#"]', function (event) {
