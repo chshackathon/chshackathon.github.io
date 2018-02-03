@@ -140,6 +140,18 @@ tr:nth-child(even) {
 .faq>div>p {
     font-size: 1.25vw;
 }
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sponsors>h1 {
+    width: 100%;
+}
+.sponsors>div {
+    padding: 1vw;
+    width: 30%;
+}
 .team {
     display: flex;
     flex-wrap: wrap;

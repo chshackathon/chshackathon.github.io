@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>C10 HAX</title>
-        <link rel="icon" href="favicon.ico">
+        <!-- Should work on all browsers now -->
+        <link rel="icon" href="media/favicon.ico">
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
         <script type="text/javascript" src="script.js"></script>
@@ -10,7 +11,8 @@
     <!-- Are these next 2 lines necessary? -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    <!-- Better utilize scaling of photo (don't use vw) -->
+    <a style="display:block;max-width:30%;min-width:60px;position:fixed;right:50px;top:0;width:50%;z-index:10000" href="https://localhost.mlh.io/" target="_blank"><img src="media/mlhlocalhost.png" alt="Major League Hacking 2018 Localhost" style="width:22vw;height:4.55vw"></a>
     <body>
         <video autoplay muted loop id="background">
             <source src="media/background.mp4" type="video/mp4">
@@ -34,6 +36,7 @@
             <div>
                 <h1 id="about">About</h1>
                 <p>C10 HAX is a 12-hour hackathon hosted April 14th, 2018 at Centennial High School, where students from various high-schools will get the opportunity to collaborate on coding projects and compete for prizes. Whether you want to learn to code, or to flex your coding abilities, C10 HAX brings together coders of all different skill sets to collectively promote the knowledge of code.</p>
+                <p style="color: #CC0000">MORE DETAILS ARRIVING SHORTLY</p>
             </div>
             <div>
                 <h1 id="schedule">Schedule</h1>
@@ -45,7 +48,7 @@
                         <th>Info</th>
                     </tr>
                     <tr>
-                        <td>8:30 AM</td>
+                        <td>8:30 AM-9:00 AM</td>
                         <td>Lobby</td>
                         <td>Check-In</td>
                         <td>Participants should register online beforehand</td>
@@ -70,6 +73,12 @@
                     </tr>
                     <tr>
                         <td>TBD</td>
+                        <td>TBD</td>
+                        <td>Coding Ends</td>
+                        <td>Judging commences</td>
+                    </tr>
+                    <tr>
+                        <td>TBD</td>
                         <td>Auditorium</td>
                         <td>Closing Ceremony</td>
                         <td>Win some prizes</td>
@@ -91,24 +100,26 @@
                 <div><b>Is there a code of conduct?</b><p>C10 HAX follows the<br> <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p></div>
                 <div><b>More Questions?</b><p>Contact us at chshackathon@gmail.com!</p></div>
             </div>
-            <div>
+            <div class="sponsors">
                 <h1 id="sponsors" >Sponsors</h1>
+                <div><a href="http://get.tech/"><img src="media/tech.png" width=300vw height=110vw></a></div>
+                <div><a href="https://balsamiq.com/"><img src="media/balsamiq.png" width=400vw height=110vw></a></div>
                 <p>Interested in sponsoring our hackathon? Contact us at chshackathon@gmail.com!</p>
             </div>
-            <!-- Is there any way not to use style? -->
+            <!-- Is there any way not to use style? Also the photos don't scale right. -->
             <div class="team" style="padding-bottom: 15%">
                 <h1>Meet the Team</h1>
-                <div><!--Organizer--><img src="media/Sathwik.jpg" width=200vw height=200vw><b>Sathwik Yanamaddi</b><p>Sathwik came up with the idea of hosting a hackathon, thereby becoming the founder of C10 HAX.</p></div>
-                <div><!--Technology--><img src="media/Richard.jpg" width=200vw height=200vw><b>Richard Huang</b><p>Richard spent a weekend learning html, CSS, and JavaScript in order to build the current C10 HAX website.</p></div>
-                <div><!--Fundraising--><img src="media/Amilee.jpg" width=200vw height=200vw><b>Amilee Huang</b><p>Amilee heads fundraising efforts and provides excellent moral support (along with monetary support). She isn't related to Richard. </p></div>
-                <div><!--Graphic Design--><img src="media/Andrew.jpg" width=200vw height=200vw><b>Andrew Zhao</b><p>Andrew never officially became part of C10 HAX, however, he is the creator of the remarkable eagle logo.</p></div>
+                <div><!--Organizer--><img src="media/Sathwik.jpg" width=200vw height=200vw><b>Sathwik Yanamaddi</b><p>Sathwik, a sophomore at Centennial High, founded C10 HAX. He additonally drives fundraising support.</p></div>
+                <!-- I cannot find anything more that's interesting about Sathwik... -->
+                <div><!--Technology--><img src="media/Richard.jpg" width=200vw height=200vw><b>Richard Huang</b><p>Richard, a sophomore at Centennial High, heads technology and early logistics efforts. He knows Java and some C++, and is self-taught in html, CSS, and JavaScript.</p></div>
+                <div><!--Fundraising--><img src="media/Amilee.jpg" width=200vw height=200vw><b>Amilee Huang</b><p>Amilee, a sophomore at Centennial High, currently runs outreach and marketing. Despite matching last names, Amilee is not related to Richard.</p></div>
             </div>
         </div>
     </body>
     <footer>
         <div>Check us out on social media!</div>
         <div>
-            <a href="LINK NOT WORKING YET"><img alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width=3% height=3%/></a>
+            <a href="https://www.google.com/url?q=https://twitter.com/CentennialHacks"><img alt=" Our Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width=3% height=3%/></a>
             <!--
             <a href="insert link here"><img alt="Instagram" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width=3% height=3%/></a>
             -->
